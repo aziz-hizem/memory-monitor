@@ -51,6 +51,10 @@ This is achieved by:
 - Pausing stops the timer outright — zero timer ticks, not just skipped
   logging.
 
+## Download
+
+Get `MemoryMonitor-win-x64.zip` from the [latest release](../../releases/latest), unzip it and run `MemoryMonitor.exe`. It needs the .NET 8 Desktop Runtime (see below).
+
 ## Requirements
 
 .NET 8 Desktop Runtime (or SDK) installed. If you don't have it:

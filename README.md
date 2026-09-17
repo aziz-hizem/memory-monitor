@@ -4,6 +4,8 @@ A tiny Windows tray app that logs your system RAM usage over time, so you
 can see how much memory you actually need for normal (non-gaming,
 non-heavy-work) usage.
 
+![Tray menu and the stats window](docs/screenshots.png)
+
 ## What it does
 
 - Sits in the system tray, showing current RAM usage (used / total / %) in

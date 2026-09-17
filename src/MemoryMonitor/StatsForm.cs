@@ -14,12 +14,14 @@ internal sealed class StatsForm : Form
         MaximizeBox = false;
         MinimizeBox = false;
         StartPosition = FormStartPosition.CenterScreen;
-        ClientSize = new Size(340, 180);
+        // Size to the text so long log paths are never cut off
+        AutoSize = true;
+        AutoSizeMode = AutoSizeMode.GrowAndShrink;
 
         var label = new Label
         {
-            AutoSize = false,
-            Dock = DockStyle.Fill,
+            AutoSize = true,
+            MaximumSize = new Size(480, 0),
             Padding = new Padding(16),
             Text = stats.SampleCount == 0
                 ? "No samples logged yet."
